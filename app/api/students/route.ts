@@ -1,4 +1,4 @@
-import { getAllStudent } from "@/app/model/StudentService"
+import { getAllStudent, addStudent } from "@/app/model/StudentService"
 import { NextResponse } from "next/server"
 
 export async function GET(){
@@ -7,7 +7,8 @@ export async function GET(){
     return NextResponse.json(students)
 }
 
-export async function POST(){
-    console.log("acessou POST")
+export async function POST(request: Request){
+    const student = await request.json()
+    addStudent(student.name, student.email)
     return NextResponse.json({sucess:"ok"})
 }
