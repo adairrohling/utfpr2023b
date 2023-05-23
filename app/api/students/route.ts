@@ -2,7 +2,7 @@ import { getAllStudent, addStudent } from "@/app/model/StudentService"
 import { NextResponse } from "next/server"
 
 export async function GET(){
-    const students = await getAllStudent(
+    const students = await getAllStudent()
     return NextResponse.json(students)
 }
 
