@@ -1,9 +1,6 @@
 /** @type {import('next').NextConfig} */
 const nextConfig = {
-    experimental: {
-      appDir: true,
-      serverActions: true,
-    }, async headers() {
+    async headers() {
       return [
         {
           // matching all API routes
