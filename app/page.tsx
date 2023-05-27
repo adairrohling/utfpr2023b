@@ -1,5 +1,3 @@
-export default function Home() {
-  return (
-    <h2 className='text-center mt-16 bg-red-300'>Home from Adair</h2>
-  )
+export default function Page() {
+  return <h1>Hello, Home page!</h1>;
 }
