@@ -1,5 +1,5 @@
 
-import { authOptions } from '../api/auth/[...nextauth]/route'
+import { authOptions } from '../api/auth/[...nextauth]/auth'
 
 import { getServerSession } from 'next-auth/next'
 export default async  function Admin() {
